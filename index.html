@@ -14,9 +14,95 @@
     <title>Weather Application</title>
   </head>
   <body>
+    <body>
     <div class="container">
-      <h1>Hey there!</h1>
+      <div class="row mt-4 mb-3">
+        <form>
+          <input type="text" id="city" placeholder="Enter your city" />
+        
+
+          <input type="submit" id="checkweather" value="Hope the weather's great?" />
+        </form>
+      
+
+      
+      <div class="row">
+        <div class="col-4">
+         <h4> 📍 Berlin </h4> | Sunday, April 2 20:21pm
+          
+           
+          
+        </div>
+        
+      </div>
+      <div class="row" id="feelsnotwarm">
+        <div class="col-4">
+          <span class="sun"> ☀️  </span> <span class="grad"> 5°C </span>
+          
+          <p class="feelslike">
+            (*Feels like 2°C 🙈 - stay warm!)
+          </p>
+        </div>
+        <div class="row" id="conditions">
+            <div class="col-3">
+                💧Humidity
+                <br />
+                50%
+            </div>
+            <div class="col-3">
+                ☔️ Chance of rain
+                <br />
+                0%
+            </div>
+            <div class="col-3">
+                💨 Wind speed
+                <br />
+                1.4 km/h
+            </div>
+        </div>
+      </div>
+      <h3>This week weather forecast</h3>
+      <div class="row" id="weekdays">
+        <div class="col-2">
+          Mon
+          <br />
+
+          🌤
+          <br />
+          +6 / -2
+        </div>
+        <div class="col-2">
+          Tue
+          <br />
+          ☁️
+          <br />
+          +7 / -1
+        </div>
+        <div class="col-2">
+          Wed
+          <br />
+         🌧
+          <br />
+          +6 / +1
+        </div>
+        <div class="col-2">
+          Thu
+          <br />
+          🌤
+          <br />
+          +9 / +3
+        </div>
+        <div class="col-2">
+          Fri
+          <br />
+          ☁️
+          <br />
+          +12 / +5
+        </div>
+      </div>
     </div>
+    <script src="src/index.js"></script>
+  </body>
     <script src="src/weatherapp.js"></script>
   </body>
 </html>
