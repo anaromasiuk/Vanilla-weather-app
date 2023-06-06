@@ -1,0 +1,13 @@
+#weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #79c2d0;
+  border-radius: 10px;
+}
+.sun {
+  font-size: 55px;
+}
+.grad {
+  font-size: 40px;
+}
