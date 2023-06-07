@@ -22,42 +22,44 @@
           <input type="text" id="city" placeholder="Enter your city" />
         
 
-          <input type="submit" id="checkweather" value="Hope the weather's great?" />
+          <input type="submit" id="checkweather" value="Hope the weather's great!" />
         </form>
-      <p>
+      <div class="row mt-4 mb-3" id="temperature"> 
+      <div class="col-6">
+        
+          <span class="sun"> ☀️  </span> <span class="number"> 5 </span>
+            <span class="grad">°C|°F </span> 
+          
+      </div>
+      <div class="col-6" id="location">
          <h4> 📍 Berlin </h4> Sunday, April 2 20:21pm
-        </p>
-      <p id="feelsnotwarm">
         
-          <span class="sun"> ☀️  </span> <span class="grad"> 5°C </span>
-          <span class="feelslike"> (*Feels like 2°C 🙈 - stay warm!) </span>
+         
+        </div>    
+         
     
-         
-            
-         
-      </p>
-        
+        </div> 
         <div class="row" id="conditions">
-            <div class="col-3">
+            <div class="col-4">
                 💧Humidity
                 <br />
                 50%
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 ☔️ Chance of rain
                 <br />
                 0%
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 💨 Wind speed
                 <br />
                 1.4 km/h
             </div>
         </div>
-      
+      <div class="row">
       <h3>This week's weather forecast</h3>
       <div class="row" id="weekdays">
-        <div class="col-2">
+        <div class="col-3">
           Mon
           <br />
 
@@ -72,7 +74,7 @@
           <br />
           +7 / -1
         </div>
-        <div class="col-2">
+        <div class="col-3">
           Wed
           <br />
          🌧
@@ -86,7 +88,7 @@
           <br />
           +9 / +3
         </div>
-        <div class="col-2">
+        <div class="col-2" id="Fri">
           Fri
           <br />
           ☁️
@@ -94,7 +96,8 @@
           +12 / +5
         </div>
       </div>
-      <small>
+      </div>
+      <small class="signature">
         <a href="https://github.com/anaromasiuk/Vanilla-weather-app"> Open-source code </a> by Anastasiia Romasiuk
     </small>
     </div>

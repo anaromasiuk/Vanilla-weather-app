@@ -5,9 +5,44 @@
   border: 1px solid #79c2d0;
   border-radius: 10px;
 }
-.sun {
-  font-size: 55px;
+#temperature {
+  padding: 0;
 }
+.sun {
+  font-size: 63px;
+}
+.number {
+  font-size: 47px;
+}
+
 .grad {
-  font-size: 40px;
+  position: relative;
+  font-size: 16px;
+  top: -26px;
+}
+
+#location {
+  margin: 23px 0 0 0;
+}
+
+#conditions {
+  padding: 0;
+}
+
+h3 {
+  padding: 27px 0 10px 0;
+  text-align: center;
+}
+
+#weekdays {
+  padding: 0px;
+  text-align: center;
+}
+
+#Fri {
+  padding: 0 0 0 20px;
+}
+
+.signature {
+  padding: 30px 0 0 10px;
 }
