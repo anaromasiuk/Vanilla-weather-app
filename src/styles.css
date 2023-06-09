@@ -8,9 +8,7 @@
 #temperature {
   padding: 0;
 }
-.sun {
-  font-size: 63px;
-}
+
 .number {
   font-size: 47px;
 }
@@ -18,7 +16,7 @@
 .grad {
   position: relative;
   font-size: 16px;
-  top: -26px;
+  top: -24px;
 }
 
 #location {
