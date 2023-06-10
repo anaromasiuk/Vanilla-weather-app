@@ -19,11 +19,14 @@
     <body>
     <div class="container">
       <div class="row mt-4 mb-3" id="weather-app">
-        <form>
-          <input type="text" id="city" placeholder="Enter your city" />
-        
+        <div class="col-7">
+        <form id="search-form" class="mb-2">
+          <input type="search" id="city" placeholder="Enter your city" class="form-control" autocomplete="off"/>
+        </div>
+        <div class="col-3">
 
-          <input type="submit" id="checkweather" value="Hope the weather's great!" />
+          <input type="submit" id="checkweather" value="Hope the weather's great!" class="btn btn-primary" />
+          </div>
         </form>
       <div class="row mt-4 mb-3" id="temperature"> 
       <div class="col-6">
