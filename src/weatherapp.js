@@ -49,7 +49,9 @@ function displayTemperature(response) {
   let dateElement = document.querySelector(".date");
   let iconElement = document.querySelector("#icon");
 
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  celsiusTemp = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
   cityElement.innerHTML = "📍 " + response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity + "%";
@@ -74,5 +76,33 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+
+  let temperatureElement = document.querySelector(".number");
+  celsiusConversion.classList.remove("active");
+  fahrenheitConversion.classList.add("active");
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+function displayCelsiusTemp(event) {
+  event.preventDefault();
+  celsiusConversion.classList.add("active");
+  fahrenheitConversion.classList.remove("active");
+  let temperatureElement = document.querySelector(".number");
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitConversion = document.querySelector("#fahrenheit-conversion");
+fahrenheitConversion.addEventListener("click", displayFahrenheitTemp);
+
+let celsiusConversion = document.querySelector("#celsius-conversion");
+celsiusConversion.addEventListener("click", displayCelsiusTemp);
+
+search("Berlin");

@@ -28,17 +28,19 @@
           <input type="submit" id="checkweather" value="Hope the weather's great!" class="btn btn-primary" />
           </div>
         </form>
-      <div class="row mt-4 mb-3" id="temperature"> 
-      <div class="col-6">
-        
-          
-<img src="" alt="Clear" id="icon"/>
+      <div class="row mt-4 mb-3">
+      <div class="col-6"  id="temperature">
+         <img src="" alt="Clear" id="icon"/>
+      
+
+
                <span class="number">  </span>
-            <span class="grad">°C|°F </span> 
-          
+            <span class="grad"> <a href="#" id="celsius-conversion" class="active">°C </a>| <a href="#" id="fahrenheit-conversion">°F </a> </span> 
+         
       </div>
+    
       <div class="col-6" id="location"> 
-         <h4 class="city">  </h4> 
+         <h3 class="city">  </h3> 
          <div class="weatherDescription"></div>
          <div class="date">Sunday, April 2 20:21pm
         
@@ -69,7 +71,7 @@
             </div>
         </div>
       <div class="row">
-      <h3>This week's weather forecast</h3>
+      <h2>This week's weather forecast</h2>
       <div class="row" id="weekdays">
         <div class="col-3">
           Mon

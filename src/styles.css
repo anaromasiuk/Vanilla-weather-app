@@ -10,12 +10,12 @@
   text-transform: capitalize;
 }
 
-#temperature {
+.temperature {
   padding: 0;
 }
 
 .number {
-  font-size: 47px;
+  font-size: 45px;
 }
 
 .grad {
@@ -26,14 +26,16 @@
 
 #location {
   margin: 23px 0 0 0;
+  text-align: center;
 }
 
 #conditions {
-  padding: 0;
+  padding: 15px 0 0 0;
+  text-align: center;
 }
 
-h3 {
-  padding: 27px 0 10px 0;
+h2 {
+  padding: 20px 0 10px 0;
   text-align: center;
 }
 
@@ -48,4 +50,15 @@ h3 {
 
 .signature {
   padding: 30px 0 0 10px;
+}
+
+.active {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+
+.active:hover {
+  color: black;
+  text-decoration: none;
 }
