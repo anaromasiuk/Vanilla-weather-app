@@ -57,7 +57,7 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity + "%";
   feelslikeElement.innerHTML = Math.round(response.data.main.feels_like) + "°C";
   windspeedElement.innerHTML = response.data.wind.speed + "km/h";
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  dateElement.innerHTML = "Updated: " + formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
