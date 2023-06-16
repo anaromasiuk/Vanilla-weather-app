@@ -104,11 +104,12 @@ function displayTemperature(response) {
 
   temperatureElement.innerHTML = Math.round(celsiusTemp);
   cityElement.innerHTML = "📍 " + response.data.name;
-  descriptionElement.innerHTML = response.data.weather[0].description;
+  descriptionElement.innerHTML = "Now: " + response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity + "%";
   feelslikeElement.innerHTML = Math.round(response.data.main.feels_like) + "°C";
   windspeedElement.innerHTML = response.data.wind.speed + "km/h";
   dateElement.innerHTML = "Updated: " + formatDate(response.data.dt * 1000);
+
   iconElement.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
