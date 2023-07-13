@@ -130,16 +130,6 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function displayFahrenheitTemp(event) {
-  event.preventDefault();
-
-  let temperatureElement = document.querySelector(".number");
-  celsiusConversion.classList.remove("active");
-  fahrenheitConversion.classList.add("active");
-  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
-
 function displayCelsiusTemp(event) {
   event.preventDefault();
   celsiusConversion.classList.add("active");
