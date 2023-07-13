@@ -86,7 +86,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 function getForecast(coordinates) {
-  let apiKey = "04bde8cc7f569f7c5603cdbc6deb89a3";
+  let apiKey = "2980ff43226d67e53abfcdb6d457dcc8";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
@@ -119,7 +119,7 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = "04bde8cc7f569f7c5603cdbc6deb89a3";
+  let apiKey = "2980ff43226d67e53abfcdb6d457dcc8";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
@@ -142,11 +142,5 @@ let celsiusTemp = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheitConversion = document.querySelector("#fahrenheit-conversion");
-fahrenheitConversion.addEventListener("click", displayFahrenheitTemp);
-
-let celsiusConversion = document.querySelector("#celsius-conversion");
-celsiusConversion.addEventListener("click", displayCelsiusTemp);
 
 search("Berlin");
